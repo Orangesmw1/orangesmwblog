@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+}
+
+.bg-logo {
+    background-image: url(../image/bg-logo.jpg);
+    background-position: center 130%;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 280px;
+
+    position: relative;
+}
+
+.overlay-bg-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.502);
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+
+    width: 400px;
+    height: 100px;
+
+    background-image: url(../image/logo.png);
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 20px;
+
+}
+
+/* header  */
+header {
+    background-color: black;
+}
+
+.navbar {
+    
+}
+
+/* nav  */
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff !important;
+}
+
+.dropdown-menu {
+    top: 115% !important;
+    background-color: black !important;
+    border-radius: 0 !important;
+}
+
+.dropdown-item {
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.account {
+    color: #fff;
+    margin-right: 10px;
+
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+
+   position: relative;
+}
+
+.icon-user .fa-user {
+    color: black;
+}
+
+.dropdown-menu-account {
+    top: 130% !important;
+}
+
+.dropdown-menu-account-2 {
+    top: 130% !important;
+    left: 82% !important;
+}
+
+.account .btn-switch-login,.btn-switch-login-2 {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 2px 8px;
+    font-size: 0.9rem;
+    border: none;
+    
+    cursor: pointer;
+}
+
+.account .btn-switch-login {
+    /* display: block; */
+    display: none;
+}
+
+.account .btn-switch-login-2 {
+    /* display: block; */
+
+}
+
+.account .btn-switch-login:hover {
+    background-color: rgb(255, 189, 89);
+    color: #fff;
+}
+
+.account .nameUserLogin {
+    padding-left: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.socical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    margin-right: 20px;
+}
+
+.socical ul {
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.socical ul li {
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 1.1rem;
+}
+
+.socical ul li:hover {
+    color:  rgb(255, 189, 89) ;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color:  rgb(255, 189, 89) !important;
+}
+
+
+
+/* search  */
+.navbar .form-inline .input-search {
+    border-radius: 20px !important;
+    height: 28px !important;
+    width: 0;
+    padding: 0;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+
+.input-search::placeholder {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.input-search:focus {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+.btn-search {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+
+    width: 30px !important;
+    height: 30px !important;
+
+    position: relative;
+
+}
+
+.btn-search i {
+    color: #fff;
+    font-size: 0.8rem;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+}
+
+/* show info  */
+.show-info-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 450px;
+}
+
+.card-show-info {
+    width: 100% !important;
+    height: 85% !important;
+
+    border: 5px double rgb(255, 189, 89);
+    border-radius: 0 !important;
+
+    display: flex;
+    justify-content: center;
+    
+    padding: 0 30px;
+}
+
+.card-show-info .row {
+    height: 85% !important;
+}
+
+.img-info {
+   
+}
+
+.img-info img {
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+
+    border-radius: 20px;
+}
+
+.card-info-user {
+    height: 100%;
+    margin-left: 50px;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card-info-user .card-text {
+    margin-top: 5px;
+}
+
+.card-info-user .full-name {
+    color: rgb(255, 189, 89);
+    font-weight: 800;
+}
+
+.card-info-user .email {
+    color: rgb(255, 189, 89);
+    font-weight: 800;
+}
+
+.card-info-user .password {
+    color: rgb(255, 189, 89);
+    font-weight: 800;
+}
+
+.card-info-user .change-password,.change-pass-new {
+    margin-top: 10px;
+    padding: 10px 15px;
+    
+    border: 4px solid rgb(255, 189, 89);
+    background-color: #fff;
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 1px rgb(255, 189, 89);
+
+    border-radius: 20px;
+}
+
+.card-info-user .form-change-pass {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-change-pass .present-password {
+    color: rgb(255, 189, 89);
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.form-change-pass .new-password {
+    color: rgb(255, 189, 89);
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.form-change-pass input {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.form-change-pass .inputPassNew {
+    margin-left: 29px;
+}

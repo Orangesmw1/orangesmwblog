@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+}
+
+.bg-logo {
+    background-image: url(../image/bg-logo.jpg);
+    background-position: center 130%;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 280px;
+
+    position: relative;
+}
+
+.overlay-bg-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.502);
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+
+    width: 400px;
+    height: 100px;
+
+    background-image: url(../image/logo.png);
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 20px;
+
+}
+
+/* header  */
+header {
+    background-color: black;
+    
+}
+
+.navbar {
+   
+}
+
+/* nav  */
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff !important;
+}
+
+.dropdown-menu {
+    top: 115% !important;
+    background-color: black !important;
+    border-radius: 0 !important;
+}
+
+.dropdown-item {
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.account {
+    color: #fff;
+    margin-right: 10px;
+
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+
+   position: relative;
+}
+
+.icon-user .fa-user {
+    color: black;
+}
+
+.dropdown-menu-account {
+    top: 130% !important;
+}
+
+.dropdown-menu-account-2 {
+    top: 130% !important;
+    left: 82% !important;
+}
+
+.account .btn-switch-login,.btn-switch-login-2 {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 2px 8px;
+    font-size: 0.9rem;
+    border: none;
+    
+    cursor: pointer;
+}
+
+.account .btn-switch-login {
+    /* display: block; */
+    display: none;
+}
+
+.account .btn-switch-login-2 {
+    /* display: block; */
+
+}
+
+.account .btn-switch-login:hover {
+    background-color: rgb(255, 189, 89);
+    color: #fff;
+}
+
+.account .nameUserLogin {
+    padding-left: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.socical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    margin-right: 20px;
+}
+
+.socical ul {
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.socical ul li {
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 1.1rem;
+}
+
+.socical ul li:hover {
+    color:  rgb(255, 189, 89) ;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color:  rgb(255, 189, 89) !important;
+}
+
+
+
+/* search  */
+.navbar .form-inline .input-search {
+    border-radius: 20px !important;
+    height: 28px !important;
+    width: 0;
+    padding: 0;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+
+.input-search::placeholder {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.input-search:focus {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+.btn-search {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+
+    width: 30px !important;
+    height: 30px !important;
+
+    position: relative;
+
+}
+
+.btn-search i {
+    color: #fff;
+    font-size: 0.8rem;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+}
+
+/* destinations  */
+
+.destinations {
+    margin-top: 40px;
+}
+
+.destinations .carousel-inner {
+
+}
+
+.destinations .carousel-item {
+    height: 400px;
+}
+
+.destinations .carousel-item .block-row {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destinations .carousel-item .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    height: 100%;
+}
+
+.destinations .carousel-item .col-4 {
+   border-radius: 20px;
+   
+   position: relative;
+}
+
+.destinations .carousel-item .col-4 a {
+    text-decoration: none;
+    color: rgb(255, 189, 89);
+}
+
+.destinations .carousel-item .col-4 a:hover {
+    color: rgb(255, 189, 89);
+}
+
+
+.title-destinations {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+
+    font-weight: bold;
+    color: rgb(255, 189, 89) ;
+
+}
+
+.title-destinations span {
+    width: 100%;
+
+    position: relative;
+}
+
+.title-destinations span::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 50%;
+    height: 2px;
+    
+    background-color: gray;
+    transition: all linear 0.3s;
+}
+
+.title-destinations span:hover::after {
+    width: 100%;
+}
+
+.destinations .carousel-item .col-4  .block-border {
+    position: absolute;
+    top: 4%;
+    left: 7.5%;
+
+    width: 85%;
+    height: 93%;
+
+    border-radius: 20px;
+    border: 3px solid rgb(255, 189, 89) ;
+}
+
+.destinations img {
+    object-fit: cover;
+    height: 350px;
+    width: 100%;
+
+    border-radius: 20px;
+}
+
+.destinations #carouselExampleControls .carousel-control-prev {
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+.destinations #carouselExampleControls .carousel-control-next {
+    opacity: 0;
+    transition: all linear 0.2s;
+
+}
+
+.destinations #carouselExampleControls:hover .carousel-control-prev {
+    opacity: 1;
+}
+
+.destinations #carouselExampleControls:hover .carousel-control-next {
+    opacity: 1;
+}
+
+/* post popular  */
+.post-popular {
+    margin-bottom: 50px;
+}
+
+.post-popular-title {
+   text-align: center;
+   margin: 50px 0 40px;
+   font-size: 1.4rem;
+   font-weight: 800;
+   text-transform: uppercase;
+   color: rgb(255, 189, 89);
+   
+
+   position: relative;
+}
+
+.post-popular-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 3px;
+    width: 3%;
+    background-color: gray;
+}
+
+.post-popular .post-popular-item .block-row{
+    display: flex;
+    justify-content: center;
+
+}
+
+#carouselExampleControls2 .block-img-post-popular {
+    height: 200px;
+    transition: all linear 0.2s;
+
+    overflow: hidden;
+}
+
+.post-popular img {
+    object-fit: cover;
+    
+    width: 100%;
+    height: 100%;
+}
+
+#carouselExampleControls2 .block-img-post-popular:hover img {
+    transform: scale(1.2);
+}
+
+.post-popular .post-popular-item-content {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.post-popular .post-popular-item-content h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+    color: rgb(255, 189, 89);
+}
+
+#carouselExampleControls2:hover .carousel-control-prev {
+    opacity: 1;
+}
+
+#carouselExampleControls2:hover .carousel-control-next {
+    opacity: 1;
+}
+
+#carouselExampleControls2 .carousel-control-prev {
+    left: -10%;
+    top: -30%;
+    opacity: 0;
+    
+    transition: all linear 0.2s;
+}
+
+#carouselExampleControls2 .carousel-control-next {
+    right: -10%;
+    top: -34%;
+    opacity: 0;
+
+    transition: all linear 0.2s;
+}
+
+#carouselExampleControls2 .carousel-control-prev-icon1,.carousel-control-next-icon2 {
+    color: gray !important;
+    font-size: 1.7rem;
+}
+
+#carouselExampleControls2 .carousel-control-prev-icon1:hover,.carousel-control-next-icon2:hover {
+    color: rgb(255, 189, 89) !important;
+}
+
+#carouselExampleControls2 .col-3:hover {
+    cursor: pointer;
+}
+
+
+/* group post  */
+.group-post {
+    border-top: 1px solid rgba(128, 128, 128, 0.271);
+    padding-top: 50px;
+}
+
+.group-post .travel-tip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.travel-tip-title {
+    text-align: center;
+}
+
+.travel-tip-title h3 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: rgb(255, 189, 89);
+}
+
+.travel-tip-title h6 {
+    font-size: 1.8rem;
+}
+
+.travel-tip-title p {
+    font-size: 0.8rem;
+}
+
+.travel-tip-content {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.img-travel-tip-main {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.img-travel-tip-main img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+}
+
+.content-main-travel-tip {
+    margin-top: 20px;
+    text-align: left;
+
+}
+
+.content-main-travel-tip p {
+    text-align: justify;
+}
+
+.btn-continue-read {
+    text-align: center;
+}
+
+.btn-continue-read .btn-read {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 189, 89);
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer !important;
+
+    position: relative;
+}
+
+.btn-continue-read .btn-read::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 2px;
+    width: 15%;
+    background-color: gray;
+    transition: all linear 0.2s;
+   
+}
+
+.btn-continue-read .btn-read:hover::after {
+    width: 100%;
+    
+}
+
+.info-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 30px;
+
+    border-top: 5px double rgba(128, 128, 128, 0.494);
+    border-bottom: 5px double rgba(128, 128, 128, 0.494);
+
+}
+
+.author {
+
+}
+
+.by-author {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: gray;
+    font-style: italic;
+}
+
+.name-author {
+    font-size: 0.9rem;
+    font-weight: 600;
+
+}
+
+.like-post {
+    display: flex;
+    align-items: center;
+}
+
+.like-post .fa-heart {
+    color: rgb(255, 189, 89);
+    
+    text-shadow: 2px 2px 3px black;
+    cursor: pointer;
+}
+
+.amount-like {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.sub-travel-tip {
+    padding: 20px 0;
+}
+
+.img-sub-travel-tip {
+    height: 250px;
+    padding: 10px 0;
+}
+
+.img-sub-travel-tip img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.sub-travel-tip-title {
+}
+
+.category-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-post {
+    padding-right: 10px;
+}
+
+.category-post h6 {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: rgb(255, 189, 89);
+    margin-bottom: 0;
+}
+
+.time-post {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: gray;
+}
+
+
+
+
+
